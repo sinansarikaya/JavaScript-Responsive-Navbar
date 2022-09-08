@@ -16,6 +16,8 @@ $ git clone https://github.com/sinansarikaya/JavaScript-Responsive-Navbar.git
 
 ## Demo Desktop
 
+<a href="https://sinansarikaya.github.io/JavaScript-Responsive-Navbar/">View Demo</a>
+
 ![Demo Picture](./img/demo.jpeg)
 
 <hr />
