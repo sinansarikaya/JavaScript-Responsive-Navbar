@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  background-color: #edf2f4;
+}
+nav {
+  background-color: #45484a;
+  height: 70px;
+  width: 100%;
+  color: #edf2f4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .logo {
+  font-size: 35px;
+}
+nav .navbar {
+  display: flex;
+}
+nav .navbar li {
+  list-style: none;
+}
+nav .navbar a {
+  text-decoration: none;
+  color: #edf2f4;
+  display: inline-block;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 20px;
+  transition: background-color 0.5s ease-in-out;
+}
+nav .navbar .nav-item.active,
+nav .navbar a:hover {
+  background-color: #f46677;
+  transition: background-color 0.5s ease-in-out;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.hamburger .bar {
+  background-color: #edf2f4;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  nav .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: fixed;
+    top: 70px;
+    background-color: #45484a;
+    right: -100%;
+    transition: all 0.3s ease-in-out;
+    width: 50%;
+    height: 100vh;
+  }
+  nav .navbar li {
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: background-color 0.5s ease-in-out;
+  }
+  nav .navbar li a {
+    width: 100%;
+  }
+
+  nav .navbar.active {
+    right: 0;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
