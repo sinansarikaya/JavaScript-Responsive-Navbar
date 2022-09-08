@@ -1,6 +1,6 @@
 # Responsive JavaScript Navbar
 
-![GitHub last commit](https://img.shields.io/github/last-commit/sinansarikaya/JavaScript-Slider?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/sinansarikaya/JavaScript-Responsive-Navbar?style=flat-square)
 
 ### Responsive hamburger navbar made using JavaScript
 
@@ -14,8 +14,12 @@ $ git clone https://github.com/sinansarikaya/JavaScript-Responsive-Navbar.git
 
 <hr />
 
-## Demo
+## Demo Desktop
 
-<a href="https://sinansarikaya.github.io/JavaScript-Slider/">View Demo</a>
+![Demo Picture](./img/demo.jpeg)
 
-![Demo Picture](./img/demo-picture.jpeg)
+<hr />
+
+## Demo Responsive
+
+![Demo Picture](./img/responsive.gif)
